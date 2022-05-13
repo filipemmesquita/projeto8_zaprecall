@@ -1,0 +1,10 @@
+.content {
+    background-color:#FB6B6B;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+}
+*{
+    font-family: 'Recursive', sans-serif;
+}
