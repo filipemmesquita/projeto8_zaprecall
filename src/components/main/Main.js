@@ -1,4 +1,4 @@
-
+import React from 'react';
 import logo from '../assets/logo.png'
 import Card from './Card'
 import Footer from '../footer/Footer'
@@ -11,19 +11,24 @@ const deck2={};
 const decks=[deck1,deck2];
 const order=[1,2,3,4,5,6,7,8];
 order.sort(() => Math.random() -0.5);
-console.log(order);
+const [results, setResults] = React.useState([]);
+function addResult(result){
+    const newResults = [...results,result];
+    setResults(newResults);
+    console.log(results)
+}
     return(
         <>
         <div className='content'>
             <div className='logotipo'>
                 <img src={logo} alt="logo"/><h1>ZapRecall</h1>
             </div>
-            <Card num="1" question={decks[0].questions[order[0]]} answer={decks[0].answers[order[0]]} />
-            <Card num="2" question={decks[0].questions[order[1]]} answer={decks[0].answers[order[1]]} />
-            <Card num="3" question={decks[0].questions[order[2]]} answer={decks[0].answers[order[2]]}  />
-            <Card num="4" question={decks[0].questions[order[3]]} answer={decks[0].answers[order[3]]}  />
+            <Card num="1" question={decks[0].questions[order[0]]} answer={decks[0].answers[order[0]]} addResult={addResult} />
+            <Card num="2" question={decks[0].questions[order[1]]} answer={decks[0].answers[order[1]]} addResult={addResult} />
+            <Card num="3" question={decks[0].questions[order[2]]} answer={decks[0].answers[order[2]]} addResult={addResult} />
+            <Card num="4" question={decks[0].questions[order[3]]} answer={decks[0].answers[order[3]]} addResult={addResult} />
         </div>
-        <Footer />
+        <Footer results={results} />
         </>
     );
 }

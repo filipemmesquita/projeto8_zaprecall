@@ -1,6 +1,6 @@
-import '../styles/cards.css'
+import '../styles/cards.css';
 import React from 'react';
-import Arrow from '../assets/setinha.png'
+import Arrow from '../assets/setinha.png';
 
 export default function Card(props){
     const [isOpened, setOpened] = React.useState(false);
@@ -11,6 +11,7 @@ export default function Card(props){
     function close(state){
         setOpened(false);
         setAnswerState(state);
+        props.addResult(state);
     }
     return(
         <>
@@ -34,7 +35,7 @@ function Question(props){
     }
     return (
         <>
-        {(isTurned===false) ? <Text num={props.num} turn={turn} question={props.question} /> : <Answer answer={props.answer} close={props.close}/>}
+        {(isTurned===false) ? <Text num={props.num} turn={turn} question={props.question} /> : <Answer answer={props.answer} close={props.close} />}
         </>
     );
 }
@@ -50,7 +51,6 @@ function Text(props){
     );
 }
 function Answer(props){
-    console.log(props.close.wrong)
     return(
         <div className='question'>
                 <p>{props.answer}</p>
