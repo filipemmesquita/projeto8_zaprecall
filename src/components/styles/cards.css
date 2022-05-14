@@ -1,0 +1,70 @@
+.card{
+    height: 65px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+    background: #FFFFFF;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px;
+}
+p{
+    font-family: Recursive;
+    font-size: 16px;
+    text-align: left;
+    color: #333333;
+}
+ion-icon{
+    font-size: 25px;
+}
+.question{
+    height: 131px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+    background: #FFFFD4;
+    position:relative;
+    box-sizing: border-box;
+    padding:10px 10px 0px
+
+}
+    .question p{
+        font-family: 'Recursive';
+        font-size: 18px;
+        color: #333333;
+    }
+    .question img{
+        position: absolute;
+        right:15px;
+        bottom:6px;
+    }
+    .question button{
+        height:37px;
+        border-radius: 5px;
+        font-family: 'Recursive';
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        box-shadow: none;
+    }
+    .question div{
+        display:flex;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        width:300px;
+        justify-content: space-between;
+    }
+    .wrong{
+        background: #FF3030;
+    }
+    .halfRight{
+        background: #FF922E;
+    }
+    .right{
+        background: #2FBE34;
+    }

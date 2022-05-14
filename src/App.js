@@ -10,7 +10,7 @@ export default function App(){
     }
     return(
         <>
-            {(isStarted==false) ? <LandingPage start={start} /> : <Main />}
+            {(isStarted===false) ? <LandingPage start={start} /> : <Main />}
         </>
     );
 }
