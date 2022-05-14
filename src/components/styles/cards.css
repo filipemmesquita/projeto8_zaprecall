@@ -16,6 +16,18 @@ p{
     text-align: left;
     color: #333333;
 }
+    p.right{
+        text-decoration-line: line-through;
+        color: #2FBE34;
+    }
+    p.wrong{
+        text-decoration-line: line-through;
+        color: #FF3030;
+    }
+    p.halfRight{
+        text-decoration-line: line-through;
+        color: #FF922E;
+    }
 ion-icon{
     font-size: 25px;
 }
@@ -59,12 +71,12 @@ ion-icon{
         width:300px;
         justify-content: space-between;
     }
-    .wrong{
+    .question .wrong{
         background: #FF3030;
     }
-    .halfRight{
+    .question .halfRight{
         background: #FF922E;
     }
-    .right{
+    .question .right{
         background: #2FBE34;
     }
