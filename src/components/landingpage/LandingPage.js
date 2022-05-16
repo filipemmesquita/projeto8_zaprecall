@@ -27,7 +27,7 @@ export default function LandingPage(props){
             <select value={deckChoice} onChange={(e) => setDeckChoice(e.target.value)}>
                 <option value="" disabled selected hidden>Escolha seu deck!</option>
                 <option value="React">React</option>
-                <option value="Teste">Teste</option>
+                <option value="Tabuada">Tabuada</option>
             </select>
             <button onClick={startCheck}>Iniciar Recall!!</button>
         </div>
