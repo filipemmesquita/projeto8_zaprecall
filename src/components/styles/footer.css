@@ -13,6 +13,9 @@
         justify-content: center;
         align-items: center;
     }
+    .footer img{
+        display:inline;
+    }
 h2{
     font-family: 'Recursive';
     font-style: normal;
@@ -34,4 +37,7 @@ h2{
     width: 23px;
     height: 23px;
     color: #FF922E;
+}
+bold{
+    font-weight: 700;
 }
