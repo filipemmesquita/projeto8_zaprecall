@@ -7,22 +7,22 @@ import Sad from '../assets/sad.png'
 export default function Footer(props){
     function ConclusionCheck(){
         if(props.results.length===props.questionsAmount){
-            let fail=false;
-            props.results.map(result => {if(result=="wrong"){fail=true;}});
+            let zapCounter=0;
+            props.results.map(result =>{if(result==="right"){zapCounter++}})
 
-            if (fail==false){
+            if (zapCounter>=props.goal){
                 return (
                     <>
                         
-                        <h2><img src={Party} alt="festa" /><bold>Parabéns!</bold></h2>
-                        <h2>Você não esqueceu de nenhum flashcard!</h2>
+                        <h2><img src={Party} alt="festa" /><strong>Parabéns!</strong></h2>
+                        <h2>Você bateu a sua meta!</h2>
                     </>
                 );
             }
-            if(fail==true){
+            if(zapCounter<props.goal){
                 return (
                     <>
-                        <h2> <img src={Sad} alt="triste" /><bold>Putz...</bold></h2>
+                        <h2> <img src={Sad} alt="triste" /><strong>Putz...</strong></h2>
                         <h2>Ainda faltam alguns... Mas Não desanime!</h2>
                     </>
                 );

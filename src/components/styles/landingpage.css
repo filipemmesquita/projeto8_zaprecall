@@ -15,4 +15,17 @@ button{
 div.landing{
     justify-content:center ;
 }
-
+input{
+    width: 246px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+select{
+    width: 246px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

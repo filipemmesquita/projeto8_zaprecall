@@ -24,7 +24,7 @@ function addCard(currentOrder, index){
             </div>
             {props.order.map(addCard)}
         </div>
-        <Footer results={results} questionsAmount={props.order.length} />
+        <Footer results={results} questionsAmount={props.order.length} goal={props.goal} />
         </>
     );
 }
