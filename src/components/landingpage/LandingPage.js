@@ -2,6 +2,7 @@ import '../styles/landingpage.css'
 import logo from '../assets/logo.png'
 
 export default function LandingPage(props){
+    
     return(
         <div className='content landing'>
             <img src={logo} alt="logo"/>

@@ -4,5 +4,34 @@
     left: 0;
     width:100%;
     background-color: white;
-    height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+    .footer div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+h2{
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+.right ion-icon {
+    width: 23px;
+    height: 23px;
+    color: #2FBE34;
+}
+.wrong ion-icon{
+    width: 23px;
+    height: 23px;
+    color: #FF3030;
+}
+.halfRight ion-icon{
+    width: 23px;
+    height: 23px;
+    color: #FF922E;
 }
